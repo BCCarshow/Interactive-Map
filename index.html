@@ -20,12 +20,19 @@
 
     document.querySelectorAll('.lightbox-trigger').forEach(g => {
       g.addEventListener('click', function () {
-        console.log('Clicked group:', g); // ✅ Debug line
         const img = g.getAttribute('data-image');
-        lightbox.open({ href: img, type: 'image' });
+        console.log('Opening image:', img); // Debug
+        lightbox.setElements([
+          {
+            href: img,
+            type: 'image'
+          }
+        ]);
+        lightbox.open();
       });
     });
   });
 </script>
+
 </body>
 </html>
