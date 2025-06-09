@@ -9,15 +9,6 @@
     svg .lightbox-trigger { cursor: pointer; }
   </style>
 </head>
-<body>
-
-<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-  <g class="lightbox-trigger" data-image="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png">
-    <circle cx="100" cy="100" r="30" fill="#ff00ff" />
-    <text x="100" y="105" text-anchor="middle" fill="white" font-size="16">2</text>
-  </g>
-</svg>
-
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
   const lightbox = GLightbox({ closeOnOutsideClick: true });
@@ -29,6 +20,14 @@
     });
   });
 </script>
+<body>
+
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <g class="lightbox-trigger" data-image="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png">
+    <circle cx="100" cy="100" r="30" fill="#ff00ff" />
+    <text x="100" y="105" text-anchor="middle" fill="white" font-size="16">2</text>
+  </g>
+</svg>
 
 </body>
 </html>
