@@ -20,8 +20,17 @@
     overflow: hidden;
   }
   svg {
-    display: block;
-  }
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+
+    /* Safari fix: use 100svh if supported */
+    @supports (height: 100svh) {
+      svg {
+        height: 100svh;
+      }
+    }
 </style>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg"
