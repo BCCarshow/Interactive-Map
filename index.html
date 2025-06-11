@@ -445,6 +445,13 @@
     });
   });
 </script>
+<script>
+  // Optional: scroll to top when lightbox opens
+  lightbox.on('open', () => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  });
+</script>
+
 
 </body>
 </html>
