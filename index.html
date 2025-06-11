@@ -47,8 +47,10 @@
   z-index: 9999;
 }
 .glightbox-close {
-  top: 20px !important;
+  position: fixed !important;
+  top: 50% !important;
   right: 20px !important;
+  transform: translateY(-50%);
   z-index: 10000 !important;
 }
 
@@ -445,13 +447,6 @@
     });
   });
 </script>
-<script>
-  // Optional: scroll to top when lightbox opens
-  lightbox.on('open', () => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  });
-</script>
-
 
 </body>
 </html>
