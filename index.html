@@ -31,8 +31,20 @@
         height: 100svh;
       }
     }
+    body.glightbox-open {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+}
+
 .glightbox-clean .gcontainer {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(160, 160, 160, 0.9) !important;
+  z-index: 9999;
 }
 
 </style>
